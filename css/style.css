@@ -56,7 +56,7 @@ img{
 /* CONTAINER*/
 .container{
   width: 100%;
-  max-width: 11500px;
+  max-width: 1150px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -66,4 +66,82 @@ img{
 /* MAIN CONTENT */
 .main-content{
   flex-grow: 1;
+}
+
+/* SITE - HEADER */
+
+.index-site-heder {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo {
+}
+
+.site-logo:hover{
+  opacity: 0.8;
+  transition: opacity 0.4s ease;
+}
+
+.site-logo:active{
+  opacity: 0.6;
+}
+
+.site-logo-link {
+  text-decoration: none;
+}
+
+.site-hero-img {
+  width: 192px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-item::after{
+  width: 45%;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 8px;
+  content: "";
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.nav-item:hover::after{
+  opacity: 1;
+}
+
+.nav-item:not(:last-child){
+  margin-right: 32px;
+}
+
+.nav-item-link {
+  text-decoration: none;
+  color: #fff;
 }
