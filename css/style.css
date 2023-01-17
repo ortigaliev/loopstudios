@@ -1,6 +1,26 @@
+/*Font */
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('../fonts/') format('woff2'),
+       url('../fonts/JosefinSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alata';
+  src: url('../fonts/Alata-Regular.woff2') format('woff2'),
+       url('../fonts/Alata-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /* Custom Prop */
 :root{
-  
+
 }
 
 /* GLOBAL STYLES */
@@ -23,11 +43,11 @@ body{
   height: 100%;
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.66;
+  font-family: "Alata", sans-serif;
   background-color: var();
-  color: var();
+  color: rgba(0, 0, 0, 0.5);
 }
 
 img{
@@ -39,9 +59,9 @@ img{
 /* CONTAINER*/
 .container{
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
