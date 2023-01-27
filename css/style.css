@@ -1,3 +1,8 @@
+/* CUSTOM PROPS */
+:root{
+  --heading-font-stack: "Josefin Sans", "Arial", sans-serif;
+}
+
 /*Font */
 @font-face {
   font-family: 'Josefin Sans';
@@ -45,7 +50,7 @@ body{
   padding: 0;
   font-size: 15px;
   line-height: 1.66;
-  font-family: "Alata", sans-serif;
+  font-family: var(--heading-font-stack);
   background-color: var();
   color: rgba(0, 0, 0, 0.5);
 }
@@ -65,12 +70,6 @@ img{
   margin-left: auto;
   margin-right: auto;
 }
-
-/* MAIN CONTENT */
-.main-content{
-  flex-grow: 1;
-}
-
 
 /* Index Hero Wrapper */
 .index-hero-wrapper {
@@ -140,7 +139,7 @@ img{
 }
 
 .sitenav__item:hover{
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .sitenav__item:not(:last-child) {
@@ -151,6 +150,8 @@ img{
   text-decoration: none;
   color: #fff;
 }
+
+
 
 /* HERO */
 .hero {
@@ -171,4 +172,66 @@ img{
   text-transform: uppercase;
   align-items: center;
   color: #fff;
+}
+
+/* PROMO */
+/* MAIN CONTENT */
+.main-content{
+  flex-grow: 1;
+}
+
+.promo {
+  padding-top: 160px;
+  padding-bottom:92px;
+}
+
+.promo__container {
+  display: flex;
+  align-items: flex-end
+}
+
+.promo__img {
+  flex-shrink: 0;
+  width: 731px;
+  height: 500px;
+  object-fit: cover;
+}
+.promo__info {
+  width: 541px;
+  height: 317px;
+  padding-top: 96px;
+  padding-left: 96px;
+  margin-left: -161px;
+  background-color: #fff;
+}
+.promo__heading {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 48px;
+  line-height: 48px;
+  color: #000;
+  font-family: var(--header-font-stack);
+}
+.promo__text {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: "Alata";
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .index-hero-wrapper {
+    background-image: url("../img/index-hero-wrapper-bg@2x.png");
+  }
+  /* Retina-specific stuff here */
+
 }
