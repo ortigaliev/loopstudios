@@ -75,6 +75,11 @@ img{
 /* Index Hero Wrapper */
 .index-hero-wrapper {
   background-color: #000;
+  background-image: url("../img/index-hero-wrapper-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Site Header */
@@ -134,11 +139,36 @@ img{
   transition: opacity 0.4s ease;
 }
 
+.sitenav__item:hover{
+  opacity: 1;
+}
+
 .sitenav__item:not(:last-child) {
   margin-right: 32px;
 }
 
 .sitenav__link {
   text-decoration: none;
+  color: #fff;
+}
+
+/* HERO */
+.hero {
+  padding-top: 130px;
+  padding-bottom: 146px;
+  color: #fff;
+}
+
+.hero__lead {
+  width: 100%;
+  max-width: 650px;
+  margin: 0;
+  padding: 40px;
+  border: 2px solid #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 72px;
+  line-height: 70px;
+  text-transform: uppercase;
+  align-items: center;
   color: #fff;
 }
