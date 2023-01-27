@@ -60,6 +60,29 @@ img{
   height: auto;
 }
 
+.button {
+  display: inline-block;
+  text-decoration: none;
+  min-width: 157px;
+  padding: 13px;
+  text-align: center;
+  border: 1px solid #000;
+  color: #000;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  transition: background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+.button:hover{
+  background-color: #000;
+  color: #fff;
+}
+
 
 /* CONTAINER*/
 .container{
@@ -220,6 +243,38 @@ img{
   line-height: 25px;
   font-family: "Alata";
 }
+
+
+/* INDEX_CREATION */
+.index-creation {
+  margin-top: 92px;
+  margin-bottom: 184px;
+
+}
+
+.index-creation__top {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.index-creation__header {
+  font-family: var(--header-font-stack);
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 300;
+  color: #000;
+  text-transform: uppercase;
+
+}
+
+.button {
+}
+
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
