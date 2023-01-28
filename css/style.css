@@ -246,7 +246,7 @@ img{
 
 
 /* INDEX_CREATION */
-.index-creation {
+.index-creations {
   margin-top: 92px;
   margin-bottom: 184px;
 
@@ -275,27 +275,34 @@ img{
 /* Index-Creation__list */
 
 .index-creation__list {
+  display: flex;
   margin-left: -30px;
   margin-bottom: -30px;
   list-style: none;
 }
 .index-creation__item {
-  width: 255px;
+  margin-left: 30px;
 }
 
 /* .index-creation__item:hover {
   background-color: rgba( 255, 255, 255, 0.75);
 } */
 
-.index-creation__link {
+.index-creation{
   position: relative;
   width: 255px;
   height: 450px;
   text-decoration: none;
 }
 
-.index-creation__link:hover{
-  background-color: rgba(255, 255, 255, 0.75);
+
+
+.index-creation__link{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 
